@@ -3,5 +3,5 @@ from django.views import generic
 from .models import RecipePost
 
 class RecipePostList(generic.ListView):
-    queryset = RecipePost.objects.all()
+    queryset = RecipePost.objects.filter(status=1)
     template_name = "recipepost_list.html"
