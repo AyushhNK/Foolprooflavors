@@ -20,7 +20,7 @@ class RecipePost(models.Model):
     )
     title = models.CharField(max_length=200, null=False, blank=False)
     slug = models.SlugField(max_length=200, unique=True)
-    featured_image = CloudinaryField('image', default='placeholder')
+    #featured_image = CloudinaryField('image', default='placeholder')
     content = models.TextField(max_length=2000, null=False, blank=False)
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
@@ -29,7 +29,7 @@ class RecipePost(models.Model):
 
     meal_type = models.CharField(max_length=50, choices=MEAL_TYPES, default="fish")
     effort = models.CharField(
-        max_length=50, choices=Effort, default="Bad day comfort food"
+        max_length=50, choices=EFFORT, default="Bad day comfort food"
     )
     """
     Need to install django-resized==version?
