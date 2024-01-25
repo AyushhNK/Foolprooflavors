@@ -26,7 +26,8 @@ if os.path.exists('env.py'):
 SECRET_KEY = 'django-insecure-q2!m0aneqnc3yhv_u_b^9a_uyyus%91&b&j#@w9lhg%n3@c7j9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+
 
 ALLOWED_HOSTS = ['8000-aslinedvins-foolproofla-ii4v23o1u8r.ws-eu107.gitpod.io','.herokuapp.com']
 
